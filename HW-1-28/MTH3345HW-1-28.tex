@@ -55,15 +55,8 @@ citecolor=blue, urlcolor=blue]{hyperref}
 The following problems are from Liu, Murray, and Pease's \textit{Language, Proof, and Logic, 2nd Edition} as assigned by Dr. Pruss \hyperlink{http://alexanderpruss.com/classes/intlogic/}{here}. They are only those that can be completed without the accompanying software.
 
 \section{Atomic Sentences}
-\setcounter{problem}{9}
-%\begin{problemgroup}
-    \begin{problem}
-        
-    \end{problem}
-%\end{problemgroup}
-\vspace{.5em}
 
-\setcounter{problem}{12}
+\setcounter{problem}{9}
 %\begin{problemgroup}
     \begin{problem}
         Translate the following into natural sounding, colloquial English, consulting the reference table above.
@@ -74,6 +67,13 @@ The following problems are from Liu, Murray, and Pease's \textit{Language, Proof
             \item \texttt{2:00 < 2:00}
         \end{enumerate}
     \end{problem}
+    The statements in \textsc{FOL} can be translated to plain English as:
+    \begin{enumerate}
+        \item Max owned Scruffy at 2:00.
+        \item Max fed Scruffy at 2:30.
+        \item Max gave Scruffy to Claire at 3:00.
+        \item 2:00 is earlier than 2:00.
+    \end{enumerate}
 %\end{problemgroup}
 \vspace{.5em}
 
@@ -95,6 +95,23 @@ The following problems are from Liu, Murray, and Pease's \textit{Language, Proof
         \end{enumerate}
         Fill in the following table with {\upshape \textsc{True}}'s and {\upshape \textsc{False}}'s according to whether the indicated sentence is true or false in the indicated world (table omitted).
     \end{problem}
+    \begin{center}
+        \begin{tabular}{c|l|c|c}
+            & \textsc{FOL} & Leibniz's & Wittgenstein's \\
+            \hline
+            1. & \texttt{Tet(lm(e))} & \textsc{True} & \textsc{False} \\
+            2. & \texttt{fm(c)$=$c} & \textsc{True} & \textsc{True} \\
+            3. & \texttt{bm(b)$=$bm(e)} & \textsc{True} & \textsc{True} \\
+            4. & \texttt{FrontOf(fm(e), e)} & \textsc{False} & \textsc{True} \\
+            5. & \texttt{LeftOf(fm(b), b)} & \textsc{False} & \textsc{False} \\
+            6. & \texttt{SameRow(rm(c), c)} & \textsc{True} & \textsc{True} \\
+            7. & \texttt{bm(lm(c))$=$lm(bm(c))} & \textsc{True} & \textsc{True} \\
+            8. & \texttt{SameShape(lm(b), bm(rm(e)))} & \textsc{True} & \textsc{True} \\
+            9. & \texttt{d$=$lm(fm(rm(bm(d))))} & \textsc{True} & \textsc{False} \\
+            10. & \texttt{Between(b, lm(b), rm(b))} & \textsc{True} & \textsc{True} \\
+        \end{tabular}
+    \end{center}
+    
 %\end{problemgroup}
 \vspace{.5em}
 
